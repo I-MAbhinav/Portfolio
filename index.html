@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Shakya | Web Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Abhinav Shakya, a passionate Web Developer specializing in creating responsive and user-friendly applications.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Placeholder for icons, will use SVGs if needed or CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-header">
+                <div class="profile-img-container">
+                    <!-- Using the uploaded artifact image path relative to likely deployment or just a placeholder if not moved yet. 
+                         Since this is local, I will point to the artifact path I know or a local copy. 
+                         For now, I'll assume the user might want to move it. I'll use a placeholder or the absolute path if it works locally.
+                         Better: Use a relative path and ask user to place image there, but for now I will use the path I have or a placeholder. 
+                         I will use a class to style it. -->
+                    <img src="profile.png" alt="Abhinav Shakya" class="profile-img" id="profile-pic">
+                    <!-- NOTE: User needs to update src to their local image or I need to copy it. I will leave a comment in the notification. -->
+                </div>
+                <h1 class="name">Abhinav Shakya</h1>
+                <h4 class="subtitle">BCA Student</h4>
+                <p class="title">Web Developer</p>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#profile" class="nav-link active"><i class="fas fa-user"></i> Profile</a>
+                <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a>
+                <a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a>
+                <a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a>
+                <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
+
+            <div class="social-links">
+                <a href="https://github.com/I-MAbhinav" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="mailto:shakyaabhinav224@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section id="profile" class="section fade-in">
+                <h2 class="section-title">Profile</h2>
+                <p class="bio-text">
+                    Passionate web developer with strong skills in building responsive and user-friendly applications.
+                    Focused on performance, clean UI, and scalable code.
+                </p>
+            </section>
+
+            <section id="experience" class="section fade-in">
+                <h2 class="section-title">Experience</h2>
+                <div class="card experience-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Web Developer Intern</h3>
+                        <span class="date">2023 — 2024</span>
+                    </div>
+                    <p class="card-description">Built responsive websites, fixed UI bugs, and improved website loading
+                        speed.</p>
+                </div>
+            </section>
+
+            <section id="education" class="section fade-in">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">BCA — Bachelor of Computer Applications</h3>
+                            <p class="timeline-subtitle">CCS University</p>
+                            <span class="timeline-date">2023 — 2026</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Intermediate</h3>
+                            <p class="timeline-subtitle">Paradise Sr Sec Public School (CBSE)</p>
+                            <span class="timeline-date">2021-2022</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Highschool</h3>
+                            <p class="timeline-subtitle">Paradise Sr Sec Public School (CBSE)</p>
+                            <span class="timeline-date">2019-2020</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section fade-in">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend & Tools</h3>
+                        <div class="tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Git & GitHub</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="tags">
+                            <span class="tag">English</span>
+                            <span class="tag">Hindi</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section fade-in">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Portfolio Website</h3>
+                        <p>Personal portfolio website showcasing skills and projects.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>E-commerce UI</h3>
+                        <p>User interface for an online store with product listings.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Chat Application</h3>
+                        <p>Real-time messaging application.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Task Manager App</h3>
+                        <p>Productivity tool built with React Vite.</p>
+                        <a href="https://i-mabhinav.github.io/Task-Manager/" class="project-link">See Project <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section fade-in">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-info">
+                    <a href="mailto:shakyaabhinav224@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>shakyaabhinav224@gmail.com</span>
+                    </a>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9760868888</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Ghaziabad</span>
+                    </div>
+                    <a href="https://github.com/I-MAbhinav" target="_blank" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/I-MAbhinav</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
