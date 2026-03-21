@@ -4,191 +4,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhinav Shakya | Web Developer Portfolio</title>
-    <meta name="description"
-        content="Portfolio of Abhinav Shakya, a passionate Web Developer specializing in creating responsive and user-friendly applications.">
-    <link rel="stylesheet" href="style.css">
+    <title>Abhinav Shakya|Portfolio</title>
+    <meta name="description" content="Portfolio of Abhinav Shakya, Web Developer.">
+    <link rel="icon" type="image/png" href="profile.png">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <!-- Placeholder for icons, will use SVGs if needed or CDN -->
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+    <!-- TagCloud -->
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="background-glow"></div>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="profile-header">
-                <div class="profile-img-container">
-                    <!-- Using the uploaded artifact image path relative to likely deployment or just a placeholder if not moved yet. 
-                         Since this is local, I will point to the artifact path I know or a local copy. 
-                         For now, I'll assume the user might want to move it. I'll use a placeholder or the absolute path if it works locally.
-                         Better: Use a relative path and ask user to place image there, but for now I will use the path I have or a placeholder. 
-                         I will use a class to style it. -->
-                    <img src="profile.png" alt="Abhinav Shakya" class="profile-img" id="profile-pic">
-                    <!-- NOTE: User needs to update src to their local image or I need to copy it. I will leave a comment in the notification. -->
-                </div>
-                <h1 class="name">Abhinav Shakya</h1>
-                <h4 class="subtitle">BCA Student</h4>
-                <p class="title">Web Developer</p>
-            </div>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-trail"></div>
 
-            <nav class="nav-menu">
-                <a href="#profile" class="nav-link active"><i class="fas fa-user"></i> Profile</a>
-                <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a>
-                <a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a>
-                <a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a>
-                <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
-                <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
-            </nav>
-
-            <div class="social-links">
-                <a href="https://github.com/I-MAbhinav" target="_blank" aria-label="GitHub"><i
-                        class="fab fa-github"></i></a>
-                <a href="mailto:shakyaabhinav224@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-        </aside>
-
-        <main class="main-content">
-            <section id="profile" class="section fade-in">
-                <h2 class="section-title">Profile</h2>
-                <p class="bio-text">
-                    Passionate web developer with strong skills in building responsive and user-friendly applications.
-                    Focused on performance, clean UI, and scalable code.
-                </p>
-            </section>
-
-            <section id="experience" class="section fade-in">
-                <h2 class="section-title">Experience</h2>
-                <div class="card experience-card">
-                    <div class="card-header">
-                        <h3 class="card-title">Web Developer Intern</h3>
-                        <span class="date">2023 — 2024</span>
-                    </div>
-                    <p class="card-description">Built responsive websites, fixed UI bugs, and improved website loading
-                        speed.</p>
-                </div>
-            </section>
-
-            <section id="education" class="section fade-in">
-                <h2 class="section-title">Education</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">BCA — Bachelor of Computer Applications</h3>
-                            <p class="timeline-subtitle">CCS University</p>
-                            <span class="timeline-date">2023 — 2026</span>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Intermediate</h3>
-                            <p class="timeline-subtitle">Paradise Sr Sec Public School (CBSE)</p>
-                            <span class="timeline-date">2021-2022</span>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Highschool</h3>
-                            <p class="timeline-subtitle">Paradise Sr Sec Public School (CBSE)</p>
-                            <span class="timeline-date">2019-2020</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills" class="section fade-in">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Frontend</h3>
-                        <div class="tags">
-                            <span class="tag">HTML5</span>
-                            <span class="tag">CSS3</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">React.js</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Backend & Tools</h3>
-                        <div class="tags">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Git & GitHub</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Languages</h3>
-                        <div class="tags">
-                            <span class="tag">English</span>
-                            <span class="tag">Hindi</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects" class="section fade-in">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Portfolio Website</h3>
-                        <p>Personal portfolio website showcasing skills and projects.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>E-commerce UI</h3>
-                        <p>User interface for an online store with product listings.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Chat Application</h3>
-                        <p>Real-time messaging application.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Task Manager App</h3>
-                        <p>Productivity tool built with React Vite.</p>
-                        <a href="https://i-mabhinav.github.io/Algonive_Task_Manager/" class="project-link">See Project <i
-                                class="fas fa-arrow-right"></i></a>
-                    </div>
-                     <div class="project-card">
-                        <h3>AeroDrive || Cloud Storage Application</h3>
-                        <p>A Cloud Storage Web Application to Store Data on Online Storage .</p>
-                         <a href="https://i-mabhinav.github.io/AeroDrive/"> See Project</a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact" class="section fade-in">
-                <h2 class="section-title">Contact</h2>
-                <div class="contact-info">
-                    <a href="mailto:shakyaabhinav224@gmail.com" class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>shakyaabhinav224@gmail.com</span>
-                    </a>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+91 9760868888</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Ghaziabad</span>
-                    </div>
-                    <a href="https://github.com/I-MAbhinav" target="_blank" class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <span>github.com/I-MAbhinav</span>
-                    </a>
-                </div>
-            </section>
-        </main>
+    <!-- Background Effects -->
+    <div class="bg-canvas">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
     </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <img src="bitmoji.png" alt="Avatar" class="nav-avatar">
+            Abhinav <span class="gradient-text">Shakya</span>
+        </a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Work</a>
+            <a href="#certifications">Certificates</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero">
+            <div class="hero-content reveal">
+                <div class="badge">Available for Work</div>
+                <h1 class="title">Crafting <br><span class="gradient-text">Digital Magic.</span></h1>
+                <p class="subtitle">Hi, I'm Abhinav Shakya, a BCA Student & Web Developer focused on building beautiful,
+                    responsive, and performant web experiences.</p>
+                <br>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">See Projects</a>
+                    <a href="https://github.com/I-MAbhinav" target="_blank" class="btn btn-icon"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual reveal delay-1">
+                <div class="profile-wrapper">
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring delay-ring"></div>
+                    <div class="profile-frame">
+                        <img src="profile.png" alt="Abhinav Shakya">
+                        <div class="frame-border"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Timeline Section -->
+        <section id="about" class="section about">
+            <div class="section-header reveal">
+                <h2>My <span class="gradient-text">Journey</span></h2>
+                <p>Experience & Education</p>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-card reveal">
+                    <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="dot"></div>
+                            <h4>Web Developer Intern</h4>
+                            <span class="date">2025</span>
+                            <p>Built responsive websites, fixed complex UI bugs, and heavily optimized website loading
+                                speeds.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="dot"></div>
+                            <h4>WEB DEVELOPMENT Intern At Algonive</h4>
+                            <span class="date">10 Feb 2026 —10 Mar 2026</span>
+                            <p>Built responsive Task Manager Web Application using Reac.js, Node.js which is used for
+                                Assigning Tasks over the Team members and Track their progress.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bento-card reveal delay-1">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="dot"></div>
+                            <h4>BCA (Bachelor of Computer Applications)</h4>
+                            <span class="date">2023 — 2026 | CCS University</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="dot"></div>
+                            <h4>Intermediate</h4>
+                            <span class="date">2021 — 2022 | Paradise Sr Sec Public School</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="dot"></div>
+                            <h4>Highschool</h4>
+                            <span class="date">2019 — 2020 | Paradise Sr Sec Public School</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills 3D Sphere Section -->
+        <section id="skills" class="section skills">
+            <div class="skills-layout">
+                <div class="skills-info reveal">
+                    <h2>Technical <span class="gradient-text">Arsenal</span></h2>
+                    <p>I leverage modern tools and frameworks to bring ideas to life. Here's what I work with on a daily
+                        basis.</p>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React.js</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
+                <div class="sphere-container reveal delay-1">
+                    <div id="sphere-wrapper"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <div class="section-header reveal">
+                <h2>Featured <span class="gradient-text">Works</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=800&auto=format&fit=crop"
+                            alt="AeroDrive Cloud Storage App">
+                    </div>
+                    <div class="project-content">
+                        <h3>AeroDrive</h3>
+                        <p>A Cloud Storage Web Application to Store Data on Online Storage.</p>
+                        <a href="https://i-mabhinav.github.io/AeroDrive/" target="_blank" class="project-link">View Live
+                            <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card reveal delay-1">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=800&auto=format&fit=crop"
+                            alt="Task Manager App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Manager App</h3>
+                        <p>Productivity tool built with React & Vite for efficient task tracking.</p>
+                        <a href="https://i-mabhinav.github.io/Algonive_Task_Manager/" target="_blank"
+                            class="project-link">View Live <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop"
+                            alt="Chat Application">
+                    </div>
+                    <div class="project-content">
+                        <h3>Chat Application</h3>
+                        <p>Real-time messaging application with instant sync.</p>
+                        <a href="#" class="project-link">Coming Soon <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card reveal delay-1">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop"
+                            alt="E-commerce UI">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce UI</h3>
+                        <p>Modern User interface for an online store with product listings.</p>
+                        <a href="#" class="project-link">Coming Soon <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section certs">
+            <div class="section-header reveal">
+                <h2>My <span class="gradient-text">Certifications</span></h2>
+                <p>Proofs of my continuous learning journey.</p>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-item reveal">
+                    <div class="cert-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=600&auto=format&fit=crop"
+                            alt="Certificate">
+                    </div>
+                    <div class="cert-details">
+                        <h4>Web Development Bootcamp</h4>
+                        <p>Udemy - 2023</p>
+                    </div>
+                </div>
+                <div class="cert-item reveal delay-1">
+                    <div class="cert-image">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=600&auto=format&fit=crop"
+                            alt="Certificate">
+                    </div>
+                    <div class="cert-details">
+                        <h4>Responsive Web Design</h4>
+                        <p>freeCodeCamp - 2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="contact-box reveal">
+                <h2>Let's work <span class="gradient-text">together</span></h2>
+                <p>Have a project in mind? Reach out and let's build something extraordinary.</p>
+                <div class="contact-methods">
+                    <a href="mailto:shakyaabhinav224@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i> shakyaabhinav224@gmail.com
+                    </a>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i> +91 9760868888
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i> Ghaziabad, India
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Abhinav Shakya. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
-
 </html>
-
-
