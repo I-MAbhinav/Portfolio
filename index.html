@@ -42,7 +42,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <a href="#home" class="logo">
-            <img src="bitmoji.png" alt="Avatar" class="nav-avatar">
+            <img src="bitmoji.png" alt="Avatar" class="nav-avatar" id="bitmoji-avatar">
             Abhinav <span class="gradient-text">Shakya</span>
         </a>
         <div class="nav-links">
@@ -60,9 +60,10 @@
         <!-- Hero Section -->
         <section id="home" class="section hero">
             <div class="hero-content reveal">
-                <div class="badge">Available for Work</div>
-                <h1 class="title">Crafting <br><span class="gradient-text">Digital Magic.</span></h1>
-                <p class="subtitle">Hi, I'm Abhinav Shakya, a BCA Student & Web Developer focused on building beautiful,
+                <div class="badge" id="bump-target-1">Available for Work</div>
+                <h1 class="title">Crafting <br><span class="gradient-text" id="bump-target-2">Digital Magic.</span></h1>
+                <p class="subtitle" id="bump-target-3">Hi, I'm Abhinav Shakya, a BCA Student & Web Developer focused on
+                    building beautiful,
                     responsive, and performant web experiences.</p>
                 <br>
                 <div class="hero-actions">
@@ -148,9 +149,14 @@
                         <span class="tag">React.js</span>
                         <span class="tag">Node.js</span>
                         <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">C</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Java</span>
                     </div>
                 </div>
                 <div class="sphere-container reveal delay-1">
+                    <canvas id="network-canvas"></canvas>
                     <div id="sphere-wrapper"></div>
                 </div>
             </div>
@@ -220,22 +226,29 @@
             <div class="cert-grid">
                 <div class="cert-item reveal">
                     <div class="cert-image">
-                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=600&auto=format&fit=crop"
-                            alt="Certificate">
+                        <img src="C3.jpg.jpeg" alt="IBM Getting Started with AI Certificate">
                     </div>
                     <div class="cert-details">
-                        <h4>Web Development Bootcamp</h4>
-                        <p>Udemy - 2023</p>
+                        <h4>Getting Started with Artificial Intelligence</h4>
+                        <p>IBM SkillsBuild - Feb 11, 2026</p>
                     </div>
                 </div>
                 <div class="cert-item reveal delay-1">
                     <div class="cert-image">
-                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=600&auto=format&fit=crop"
-                            alt="Certificate">
+                        <img src="C2.png" alt="SFJ GEN AI NASSCOM Certificate">
                     </div>
                     <div class="cert-details">
-                        <h4>Responsive Web Design</h4>
-                        <p>freeCodeCamp - 2024</p>
+                        <h4>GEN AI NASSCOM</h4>
+                        <p>SFJ Let's Transform - Feb 24, 2026</p>
+                    </div>
+                </div>
+                <div class="cert-item reveal delay-1">
+                    <div class="cert-image">
+                        <img src="C3.jpg.jpeg" alt="Algonive WEB DEVELOPMENT Intern Certificate">
+                    </div>
+                    <div class="cert-details">
+                        <h4>WEB DEVELOPMENT Internship</h4>
+                        <p>Algonive - Mar 10, 2026</p>
                     </div>
                 </div>
             </div>
@@ -264,6 +277,12 @@
     <footer class="footer">
         <p>&copy; 2026 Abhinav Shakya. All rights reserved.</p>
     </footer>
+
+    <!-- Certificate Modal Lightbox -->
+    <div id="cert-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Certificate Full View">
+    </div>
 
     <script src="script.js"></script>
 </body>
